@@ -23,7 +23,5 @@ jobs:
         name: Build and push
         uses: docker/build-push-action@v5
         with:
-          context: .
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/app:latest
-          no-cache: true
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/todo:latest
